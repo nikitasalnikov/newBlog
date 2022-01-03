@@ -1,0 +1,80 @@
+.about__me {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: -500px;
+    margin-left: -120px;
+
+        &-left{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            margin-right: 50px;
+           
+        }
+        &-education{
+            font-size: 24px;
+            line-height: 29px;
+            font-family: 'Goldman';
+            font-weight: 400;
+            text-align: center;
+            text-transform: capitalize;
+            color: $blueDark;
+            border: 1px solid $blueDark;
+            padding: 10px 1px;
+            margin-bottom: 20px;
+        }
+        &-years{
+            display: flex;
+            align-items: flex-start;
+            width: 365px;
+            margin-bottom: 20px;
+        }
+        &-years:nth-of-type(3){
+            margin-bottom: 70px;
+        }
+        &-year{
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            margin-left: 15px;
+            
+            &.experience__year,
+            &.contact{
+                align-items: flex-end;
+                text-align: end;
+                margin-right: 15px;
+            }
+
+            span{
+                font-size: 24px;
+                line-height: 29px;
+                color: $whiteColor;
+                text-transform: capitalize;
+                font-family: 'Goldman';
+                font-weight: 400;
+                margin-bottom: 10px;
+            }
+            .education__year-about{
+                font-size: 14px;
+                line-height: 17px;
+                text-transform: capitalize;
+                font-family: 'Goldman';
+                font-weight: 400;
+                color: #FFFFFF;
+            }
+        }
+        &-right{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            margin-left: 50px;
+            
+            .contact__item{
+                justify-content: end;
+                margin-top: 60px;
+            }
+        }
+
+
+}

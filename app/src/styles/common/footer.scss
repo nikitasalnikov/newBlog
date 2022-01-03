@@ -1,0 +1,78 @@
+.footer{
+    margin-top: 127px;
+    background: $blueDark;
+    padding: 20px 0 132px 0;
+    
+    &__nav{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        
+        &-list{
+            display: flex;
+            align-items: center;
+        }
+        
+        &-form{
+            max-width: 850px;
+            width: 100%;
+        }
+        &-input{
+            padding: 17px 0 17px 20px;
+            border: none;
+            outline: none;
+            max-width: 660px;
+            width: 100%;
+            color: #C4C4C4;
+            text-transform: capitalize;
+            letter-spacing: 0.15em;
+            line-height: 16px;
+            font-size: 14px;
+            font-family: 'Goldman';
+            font-weight: 400;
+        }
+        &-btn{
+            max-width: 190px;
+            width: 100%;
+            padding: 17px 0;
+            border: none;
+            outline: none;
+            background: $blackColor;
+            color: $whiteColor;
+            letter-spacing: 0.15em;
+            text-transform: capitalize;
+            font-size: 14px;
+            line-height: 16px;
+            font-family: Goldman;
+            font-weight: 400;
+        }
+        &-link{
+            display: inline-block;
+            margin-right: 22px;
+            &.last{
+                margin-right: 0;
+            }
+        }
+   
+        
+    }
+    &__list{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 45px;
+        
+        &-link{
+            display: inline-block;
+            margin-right: 75px;
+            color: $whiteColor;
+            text-transform: uppercase;
+            letter-spacing: 0.15em;
+            font-size: 18px;
+            line-height: 36px;
+            font-family: Goldman;
+            font-weight: 400;
+        }
+    }
+}
+

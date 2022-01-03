@@ -1,0 +1,118 @@
+.contact {
+    position: relative;
+    .background {
+        background: rgba(78, 94, 255, 0.35);
+        height: 100%;
+        position: absolute;
+        top: 0;
+        right: 0;
+        max-width: 620px;
+        width: 100%;
+        z-index: -1;
+    }
+    &__page {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 85px;
+        &-left {
+            max-width: 850px;
+            width: 100%;
+            .contact__left-title {
+                font-size: 50px;
+                line-height: 60px;
+                text-transform: capitalize;
+                color: $blueDark;
+                font-family: 'Goldman';
+                font-weight: 400;
+                margin-bottom: 30px;
+            }
+            .contact__left-desc {
+                font-size: 24px;
+                line-height: 29px;
+                text-transform: capitalize;
+                color: $whiteColor;
+                font-family: 'Goldman';
+                font-weight: 400;
+                margin-bottom: 30px;
+            }
+            .contact__left-form {
+                max-width: 850px;
+                width: 100%;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                align-items: center;
+                margin-bottom: 70px;
+            }
+            .contact__left-form input {
+                background: transparent;
+                border: 1px solid $blueDark;
+                padding: 17px 0 17px 15px;
+            }
+            .input__message {
+                background: transparent;
+                border: 1px solid $blueDark;
+                width: 100%;
+                padding: 17px 0 165px 15px;
+                resize: none;
+            }
+            .input__name::placeholder,
+            .input__email::placeholder,
+            .input__subject::placeholder,
+            .input__message::placeholder {
+                font-size: 14px;
+                line-height: 17px;
+                text-transform: uppercase;
+                color: #C4C4C4;
+            }
+            .input__name,
+            .input__email {
+                max-width: 410px;
+                width: 48%;
+            }
+            .input__subject {
+                width: 100%;
+                margin-top: 20px;
+                margin-bottom: 20px;
+            }
+        }
+        &-btn {
+            text-transform: uppercase;
+            color: $whiteColor;
+            font-size: 14px;
+            line-height: 17px;
+            text-align: center;
+            font-family: 'Goldman';
+            font-weight: 400;
+            width: 300px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 17px 0;
+            background: $blueDark;
+            float: right;
+        }
+        &-right {
+            display: flex;
+            flex-direction: column;
+            .contact__page-img {
+                height: 230px;
+                width: 190px;
+            }
+            .contact__right-text {
+                display: flex;
+                align-items: center;
+                margin-bottom: 20px;
+                .text__number {
+                    margin-left: 15px;
+                    font-size: 14px;
+                    line-height: 17px;
+                    text-transform: capitalize;
+                    font-family: 'Goldman';
+                    font-weight: 400;
+                    color: $whiteColor;
+                }
+            }
+        }
+    }
+}

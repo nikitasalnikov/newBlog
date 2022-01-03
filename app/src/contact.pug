@@ -1,0 +1,17 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title Document
+        link(rel="stylesheet", href="./styles/main.min.css")
+    body.contact
+        .background
+        include view/header.pug
+        main.main 
+            .container
+                include view/second-page/contact-main.pug
+    
+        include view/footer.pug
+    script(src="./script/all.min.js") 

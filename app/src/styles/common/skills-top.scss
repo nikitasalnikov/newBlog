@@ -1,0 +1,51 @@
+.skills__top {
+    background: $whiteColor;
+
+    &-item {
+        background: #242424;
+        padding: 20px 20px 52px 20px;
+        max-width: 300px;
+        width: 100%;
+    }
+
+    &-items {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 34px;
+    }
+
+    &-content {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 30px;
+        margin-top: -15px;
+    }
+
+    &-about {
+        display: flex;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+
+    &-title {
+        margin-left: 20px;
+        color: $whiteColor;
+        font-size: 24px;
+        line-height: 27px;
+        text-transform: capitalize;
+        font-family: 'Goldman';
+        font-weight: 400;
+    }
+
+    &-description {
+        color: $whiteColor;
+        text-transform: capitalize;
+        line-height: 16px;
+        font-size: 14px;
+        font-family: 'Poppins';
+        font-weight: 400;
+        max-width: 260px;
+        width: 100%;
+    }
+}

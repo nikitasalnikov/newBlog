@@ -1,0 +1,49 @@
+$blackColor: #111111;
+$whiteColor: #FFFFFF;
+$blueDark: #4E5EFF;
+$blue: #313DB5;
+$blueLight: #6472FF;
+$yellow: #FFF500;
+$grayLight: #EFEFEF;
+$grayDark: #949494;
+$fonts: ('Goldman', 'Regular', 400),
+('Nunito', 'Regular', 400),
+('Poppins', 'Regular', 400),
+('Poppins', 'SemiBold', 600),
+('PressStart2P', 'Regular', 400);
+
+
+@each $name,
+$type,
+$weight in $fonts {
+    @font-face {
+        font-family: $name;
+        src: url('../fonts/#{$name}-#{$type}.ttf');
+        font-weight: $weight;
+    }
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+
+
+.container {
+    max-width: 1290px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+body {
+    background: url('../images/main-Pattern.webp') no-repeat $blackColor;
+}
+
+main {
+    position: relative;
+}

@@ -1,0 +1,228 @@
+.portfolio__works {
+    display: grid;
+    position: relative;
+    margin-top: -570px;
+    .packman{
+        content: url('../images/packman.png');
+        position: absolute;
+        right: -140px;
+        bottom: 0;
+        animation: packman 50s  linear infinite ;  
+    }
+  
+    &-item{
+        display: flex;
+        gap: 30px;
+        margin-bottom: 70px;
+        
+        &:nth-child(1){
+            grid-column: 1/span 3;
+            grid-row: 1;    
+        }
+        &:nth-child(2){
+            grid-column: 1/span 3; 
+            grid-row: 2;    
+        }
+        &:nth-child(3){
+            grid-column: 1/span 3;
+            grid-row: 3;     
+        }
+    }
+    &-search{
+        grid-column: 4/span 4;
+        grid-row: 1/span 3;  
+        margin-left: 140px;
+    }
+    &-title{
+        color: $blueDark;
+        font-size: 36px;
+        line-height: 41px;
+        font-family: 'Goldman';
+        font-weight: normal;
+        text-transform: capitalize;
+        margin-bottom: 20px;
+        
+        &.search-title{
+            font-size: 24px;
+            line-height: 29px;
+            margin-bottom: 10px;
+        }
+    }
+    &-description{
+        color: $whiteColor;
+        font-size: 24px;
+        line-height: 27px;
+        font-family: 'Goldman';
+        font-weight: normal;
+        text-transform: capitalize;
+        margin-bottom: 20px;
+        max-width: 520px;
+        width: 100%;
+    }
+    &-link{
+        display: flex;
+        max-width: 300px;
+        border: 1px solid $blueDark;
+        padding: 17px 0;
+        color: $blueDark;
+        justify-content: center;
+        align-items: center;
+        font-family: 'Goldman';
+        line-height: 16px;
+        font-size: 14px;
+        font-weight: normal;
+    }
+    &-form{
+        position: relative;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        margin-bottom: 50px;
+
+        & input{
+            border: 1px solid $blueDark;
+            box-sizing: border-box;
+            background: transparent;
+            padding: 17px 10px;
+            max-width: 300px;
+            width: 100%;
+            
+            &::placeholder{
+                font-size: 14px;
+                line-height: 17px;
+                text-transform: capitalize;
+                color: $grayDark;
+                font-family: 'Goldman';
+                font-weight: 400;
+
+            }
+        }
+
+        &::after{
+            content: url('../images/search.svg');
+            position: absolute;
+            right: 20px;
+        }
+    }
+
+    &-categories{
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 50px;
+        
+        .categories__points{
+            display: flex;
+            flex-direction: column;
+            
+
+            &-about{
+                display: flex;
+                align-items: center;
+                margin-bottom: 10px;
+
+                img{
+                    margin-right: 16px;
+                }
+                .point__title{
+                    font-size: 14px;
+                    line-height: 17px;
+                    font-family: 'Goldman';
+                    font-weight: 400;
+                    color: $whiteColor;
+                    text-transform: capitalize;
+                }
+            }
+            &-tag {
+                display: flex;
+                align-items: center;
+            }
+            
+        }
+        
+    }
+    &-tags{
+       
+
+        .catigories__tags{
+        
+            .tags__content{
+                display: flex;
+                align-items: center;
+            }
+
+            .categories__points-tag{
+                display: flex;
+                align-items: center;
+                border: 1px solid $blueDark;
+                padding: 7px 10px;
+                margin-bottom: 10px;
+
+                .tag__title{
+                    font-size: 12px;
+                    line-height: 14px;
+                    text-transform: capitalize;
+                    color: $blueDark;
+                    font-family: 'Goldman';
+                    font-weight: 400;
+                    margin-left: 10px;
+                }
+            }
+            .categories__points-tag:not(:last-child){
+                margin-right: 10px;
+                
+            }
+        }
+    }
+
+   
+  
+    
+}
+.star{
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background: #fff;
+    left: 37px;
+    top: 19px;
+    border-radius: 50%;
+    animation: star 1s infinite;
+}
+@keyframes star {
+    0%{
+        text-indent: 5em;
+        opacity: 1;
+    }
+    50%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+    
+}
+@keyframes packman {
+    0% {
+       
+    }
+   25%{
+        transform: translate(-1410px,0);
+    }
+   
+    49%{
+        content: url('../images/packman1.png');
+        transform: translate(-1410px, -1150px);
+    }
+  
+    50%{
+        content: url('../images/packman2.png');
+       
+    }
+    75%{
+        transform: translate(0, -1150px);
+    }
+    100%{
+        content: url('../images/packman3.png');
+    }
+
+}

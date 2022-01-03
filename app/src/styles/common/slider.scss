@@ -1,0 +1,92 @@
+.slider {
+    position: relative;
+    overflow: hidden;
+    min-height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    &__slide{
+        &.second-slide,
+        &.third-slide{
+            display: flex;
+            justify-content: space-evenly;
+        }
+        &.third-slide .slider__slide-title{
+            max-width: 600px;
+            width: 100%;
+        }
+        &-pixel{
+            object-fit: contain;
+            height: 522px;
+        }
+    }
+    &__main {
+        position: relative;
+        background: url('../images/tetris.webp') no-repeat center bottom;
+        padding-top: 30px;
+        
+        &.bg-none{
+            background-image: none;
+        }
+    }
+    &__items {
+        position: relative;
+        flex-grow: 1;
+    }
+
+    &__slide-title {
+        max-width: 850px;
+        width: 100%;
+        font-size: 50px;
+        line-height: 57px;
+        color: $yellow;
+        letter-spacing: 0.15em;
+        text-transform: capitalize;
+        font-family: 'PressStart2P';
+        font-weight: 400;
+        margin-left: 74px;
+    }
+    &__slide-link {
+        display: block;
+        max-width: 300px;
+        width: 100%;
+        background: $blueDark;
+        color: $whiteColor;
+        font-size: 14px;
+        line-height: 16px;
+        text-transform: capitalize;
+        letter-spacing: 0.15em;
+        font-family: 'Goldman';
+        font-weight: 400;
+        padding: 17px 0;
+        text-align: center;
+        transition: 0.5s;
+        margin-top: 70px;
+        margin-left: auto;
+        margin-right: auto;
+        &:hover {
+            opacity: 0.5;
+        }
+        &.contact-link{
+            margin-left: 74px;
+        }
+    }
+
+    &__prev {
+        position: absolute;
+        background: transparent;
+        border: none;
+        top: 185px;
+        cursor: pointer;
+    }
+
+    &__next {
+        position: absolute;
+        background: transparent;
+        border: none;
+        top: 185px;
+        right: 0;
+        cursor: pointer;
+    }
+}
