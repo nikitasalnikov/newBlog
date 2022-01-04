@@ -14,7 +14,9 @@
         align-items: center;
         padding-bottom: 34px;
     }
-
+    &-img{
+        width: 100%;
+    }
     &-content {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
@@ -47,5 +49,15 @@
         font-weight: 400;
         max-width: 260px;
         width: 100%;
+    }
+}
+
+@media (max-width:920px) {
+    .skills__top{
+
+        &-content {
+            grid-gap: 15px;
+         
+        }
     }
 }

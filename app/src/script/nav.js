@@ -1,8 +1,8 @@
 const navLink = document.querySelectorAll('.header__nav-link'),
 headerBtn = document.querySelector('.header__btn'),
 headerList = document.querySelector('.header__nav-list'),
-headerAbs = document.querySelector('.header__abs')
-
+headerAbs = document.querySelector('.header__abs'),
+bars = document.querySelector('.bars')
 // for(let i = 0; i < navLink.length; i++){
 //     navLink[i].addEventListener('click', (e) => {
 //        e.preventDefault()
@@ -21,6 +21,7 @@ headerBtn.addEventListener('click',function (e) {
     document.body.classList.toggle('hidden');
     this.classList.toggle('active');
     headerList.classList.toggle('active');
+    bars.classList.toggle('active');
     headerAbs.classList.toggle('active');
 })
 headerAbs.addEventListener('click', function () {

@@ -7,6 +7,10 @@
 
         &-list {
             display: flex;
+            
+            &.active{
+                top: 8px;
+            }
         }
         &-link {
             display: inline-block;
@@ -25,5 +29,77 @@
     }
     &__btn{
         display: none;
+        height: 20px;
+        width: 30px;
+        position: relative;
+
+        & span{
+            position: absolute;
+            width: 100%;
+            height: 2px;
+            background: $whiteColor;
+            top: 9px;
+
+            &.active{
+                display: none;
+            }
+        }
+        
+        &.active::before{
+            transform: rotate(45deg);
+            top: 9px;
+        }
+        &.active:after{
+            transform: rotate(-45deg);
+            bottom: 9px;
+        }
+
+    }
+    &__btn::after{
+        content: '';
+        background: $whiteColor;
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        left: 0;
+        bottom: 0;
+        transition: 0.5s;
+    }
+    &__btn::before{
+        content: '';
+        background: $whiteColor;
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        left: 0;
+        top: 0;
+        transition: 0.5s;
+    }
+    
+}
+
+@media (max-width:920px) {
+    .header{
+        
+        &__nav{
+
+
+            &-list{
+                flex-direction: column;
+                position: absolute;
+                right: 0;
+                line-height: 50px;
+                top: -200px;
+                transition: 0.5s;
+                background: $blackColor;
+                z-index: 3;
+            }
+        }
+        &__btn{
+            display: block;
+            z-index: 4;
+        }
+
+        
     }
 }
