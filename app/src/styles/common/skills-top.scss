@@ -61,3 +61,25 @@
         }
     }
 }
+@media (max-width:850px) {
+    .skills__top{
+
+        &-content {
+           grid-template-columns: 1fr;
+           margin-top: 25px;
+           width: 100%;
+        }
+        &-img{
+            display: none;
+        }
+        &-item{
+            width: 100%;
+            max-width: none;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+   
+}

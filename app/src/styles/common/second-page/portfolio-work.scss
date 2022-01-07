@@ -89,3 +89,9 @@
     }
    
 }
+
+@media (max-width:600px) {
+    .portfolio__work {
+        flex-direction: column;
+    }
+}

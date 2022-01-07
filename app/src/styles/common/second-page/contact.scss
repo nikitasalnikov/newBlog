@@ -48,13 +48,19 @@
                 background: transparent;
                 border: 1px solid $blueDark;
                 padding: 17px 0 17px 15px;
+                outline: none;
+                color: $whiteColor;
+                
             }
+            
             .input__message {
                 background: transparent;
                 border: 1px solid $blueDark;
                 width: 100%;
                 padding: 17px 0 165px 15px;
                 resize: none;
+                outline: none;
+                color: $whiteColor;
             }
             .input__name::placeholder,
             .input__email::placeholder,
@@ -112,6 +118,45 @@
                     font-weight: 400;
                     color: $whiteColor;
                 }
+            }
+        }
+    }
+}
+
+@media (max-width:1260px) {
+    .contact {
+
+        &__page{
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            &-right{
+                margin-top: 20px;
+            }
+
+        }
+
+        &__left-form{
+
+            & .input__name,
+            & .input__email{
+                max-width: none;
+                width: 100%;
+            }
+            & .input__email{
+                margin-top: 20px;
+            }
+        }
+    }
+}
+@media (max-width:320px) {
+    .contact {
+
+        &__page{
+
+            &-btn{
+                width: 100%;
             }
         }
     }

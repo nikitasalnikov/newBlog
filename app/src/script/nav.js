@@ -28,7 +28,8 @@ headerAbs.addEventListener('click', function () {
     document.body.classList.remove('hidden');
     this.classList.remove('active');
     headerList.classList.remove('active');
-    headerBtn.classList.toggle('active');
+    headerBtn.classList.remove('active');
+    bars.classList.remove('active');
 })
 navLink.forEach(item => {
     let page = item.getAttribute('data-page')

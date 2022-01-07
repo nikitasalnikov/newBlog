@@ -1,3 +1,6 @@
+body.hidden{
+    overflow: hidden;
+}
 .header {
     padding: 20px 0 18px 0;
     &__nav {
@@ -9,7 +12,16 @@
             display: flex;
             
             &.active{
-                top: 8px;
+                top: 0;
+
+                & li{
+                    margin-left: 50px;
+                    margin-top: 30px;
+
+                    &:last-child{
+                        margin-bottom: 30px;
+                    }
+                }
             }
         }
         &-link {
@@ -75,6 +87,19 @@
         top: 0;
         transition: 0.5s;
     }
+    &__abs{
+        position: absolute;
+        width: 100%;
+        height: 100vh;
+        background: #1c1d1ed6;
+        top: -100%;
+        z-index: 1;
+
+        &.active{
+            top: 0;
+        }
+    }
+
     
 }
 
